@@ -18,3 +18,17 @@ if(3**2 + 4**2 == 25):
 if (2 + 4 + 6 > 12):
     print("Verdadeiro!")
 
+# 1387 é divisível por 19
+
+if (1387 % 19 == 0):
+    print("Verdadeiro!")
+
+# 31 é par
+
+if (31 % 2 == 0):
+    print("Verdadeiro!")
+
+# O menor valor entre: 34, 29 e 31 é menor que 30
+
+if (min(34, 29, 31) < 30):
+    print("Verdadeiro!")
