@@ -8,27 +8,38 @@ while True:
         cont100 = valor // 100 #pegar apenas a parte inteira da divisão
         valor = valor - cont100 * 100
         print(f'Cédulas de 100: {cont100}')
+        if not valor:
+            break
 
     if valor >= 50:
         cont50 = valor // 50 #pegar apenas a parte inteira da divisão
         valor = valor - cont50 * 50
         print(f'Cédulas de 50: {cont50}')
+        if not valor:
+            break
 
     if valor >= 20:
         cont20 = valor // 20 #pegar apenas a parte inteira da divisão
         valor = valor - cont20 * 20
         print(f'Cédulas de 20: {cont20}')
+        if not valor:
+            break
 
     if valor >= 10:
         cont10 = valor // 10 #pegar apenas a parte inteira da divisão
-        valor = valor - cont100 * 10
+        valor = valor - cont10 * 10
         print(f'Cédulas de 10: {cont10}')
+        if not valor:
+            break
 
     if valor >= 5:
         cont5 = valor // 5 #pegar apenas a parte inteira da divisão
         valor = valor - cont5 * 5
         print(f'Cédulas de 5: {cont5}')
+        if not valor:
+            break
 
     if valor:
         cont1 = valor
         print(f'Cédulas de 1: {cont1}')
+        break
