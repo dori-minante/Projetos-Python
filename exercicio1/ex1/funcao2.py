@@ -15,14 +15,27 @@
 # Retorne verdadeiro se o tamanho da string estiver entre os valores de mínimo e máximo,
 # e falso, caso contrário
 
-def valida_string(pergunta, min, max):
-    s1 = input(pergunta)
-    tam = len(s1)
-    while ((tam < min) or (tam > max)):
-        s1 = input(pergunta)
-        tam = len(s1)
-    return s1
+# def valida_string(pergunta, min, max):
+#     s1 = input(pergunta)
+#     tam = len(s1)
+#     while ((tam < min) or (tam > max)):
+#         s1 = input(pergunta)
+#         tam = len(s1)
+#     return s1
+#
+# #programa principal
+# x = valida_string('Digite uma string: ', 10, 30)
+# print('Você digitou a string: {}. \n Dado válido. Encerrando o programa...'.format(x))
 
-#programa principal
-x = valida_string('Digite uma string: ', 10, 30)
-print('Você digitou a string: {}. \n Dado válido. Encerrando o programa...'.format(x))
+# Função lambda
+# São funções mais simples, sem nome
+# Podem ser escritas em uma só linha de código e dentro do programa principal
+
+res = lambda x: x * x
+print(res(3))
+
+# faça uma função lambda que recebe dois valores numéricos como parâmetro
+# Ao primeiro valor, sempre some 5. Em seguida, multiplique ambos e retorne o resultado
+
+calc = lambda a,b: (a + 5) * b
+print(calc(5,10))
